@@ -17,6 +17,7 @@
       <excludeFolder url="file://$MODULE_DIR$/bin/ilc/ivping" />
       <excludeFolder url="file://$MODULE_DIR$/bin/ilc/model" />
       <excludeFolder url="file://$MODULE_DIR$/bin/ilc/view" />
+      <excludeFolder url="file://$MODULE_DIR$/bin" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="inheritedJdk" />
