@@ -13,6 +13,10 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/res" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/ilc/interfaces" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/ilc/ivping" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/ilc/model" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/ilc/view" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="inheritedJdk" />
