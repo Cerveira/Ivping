@@ -304,9 +304,10 @@ public class RootFrame extends JFrame {
         try {
             if (tab == 0) {
                 int linhaSelecionada = radioTable.getSelectedRow();
-                String location = (String) radioTable.getValueAt(linhaSelecionada, 2);
-                String ip = (String) radioTable.getValueAt(linhaSelecionada, 1);
                 String hostname = (String) radioTable.getValueAt(linhaSelecionada, 0);
+                String ip = (String) radioTable.getValueAt(linhaSelecionada, 1);
+                String location = (String) radioTable.getValueAt(linhaSelecionada, 2);
+
                 String comando = "cmd /c start http://" + ip;
 
                 if ((location.contains("(CERAGON)") && !hostname.contains("BE01") && !hostname.contains("BE02")
@@ -321,7 +322,7 @@ public class RootFrame extends JFrame {
                     }
                 } else if (((hostname.contains("BE01") || hostname.contains("BE02") || hostname.contains("BE03"))
                         && location.contains("(CERAGON)")) || (hostname.equals("ANRITSU")
-                        && ip.contains("10.31")))
+                        && location.contains("ANRITSU")))
                 {
                     try {
                         Runtime.getRuntime().exec("mstsc /v " + ip);
